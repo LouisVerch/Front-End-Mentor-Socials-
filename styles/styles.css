@@ -1,0 +1,114 @@
+:root {
+    /* Define Color Variables */
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+
+    /* Font Family Variable */
+    --font-primary: 'Inter',
+        sans-serif;
+
+    /* Font Weights Variables */
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+/* CSS Reboot (Reset) */
+
+/* Remove default margins and paddings */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove link underlines */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Set consistent image behavior */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Set a consistent font family and line-height */
+body {
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    text-align: left;
+    background-color: var(--color-grey-900);
+    color: var(--color-white);
+    padding: 3%;
+}
+
+.container {
+    margin: 5%, 10%, 10%, 40%;
+    border-radius: 0.5rem;
+    background-color: var(--color-grey-800);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+    padding-top: 15%;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+}
+
+h2 {
+    font-size: 1rem;
+    color: var(--color-green);
+    font-weight: var(--font-weight-semibold);
+    padding-bottom: 3%;
+}
+
+p {
+    font-size: 0.9rem;
+    padding-bottom: 2%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+li {
+    width: 20rem;
+    margin: 0.8rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-grey-700);
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-semibold);
+}
